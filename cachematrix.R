@@ -13,8 +13,6 @@ makeCacheMatrix <- function(x = matrix()) {
     # Initialize the inverse value as NULL
     inv <- NULL
 
-    # Set the matrix 
-
     # Set the matrix
     set <- function(y) {
         x <<- y
@@ -33,7 +31,7 @@ makeCacheMatrix <- function(x = matrix()) {
     # Get the inverse of the matrix
     getinv <- function() inv
 
-    # Return the cacheable matrix methods?
+    # Return the cacheable matrix methods
     list(set = set, get = get,
          setinv = setinv,
          getinv = getinv)
